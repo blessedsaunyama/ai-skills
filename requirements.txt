@@ -1,0 +1,3 @@
+# Engine A (py2d) + shared tools. Tested with numpy 2.5 / Pillow 13 on Python 3.14; ranges keep Python 3.10+ working.
+numpy>=1.26,<3
+Pillow>=10.1,<14

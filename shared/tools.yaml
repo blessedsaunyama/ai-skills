@@ -1,0 +1,475 @@
+# animation-studio software registry. One entry per tool: what it is, how to detect it, how to install it on each
+# package manager, the official download page, and what the skill does with it.
+# Read by shared/registry.py (strict YAML subset: 2-space indent, `key: value`, `- item`, inline [lists]).
+#
+# VERIFIED on 2026-11-05 against the official package databases, never guessed:
+#   winget: `winget show --id <id> -e` · choco: community.chocolatey.org · scoop: ScoopInstaller main/extras buckets
+#   brew: formulae.brew.sh API · flatpak: flathub.org API · apt: packages.ubuntu.com (24.04 noble)
+#   dnf: mdapi.fedoraproject.org (Fedora 43) · pacman: archlinux.org package search · snap: api.snapcraft.io
+#   zypper: NOT verifiable automatically (software.opensuse.org returns 403) -> listed under `unverified`; the skill runs
+#   `zypper search <name>` and shows the result before offering an install.
+# Placeholders in paths: %ProgramFiles%, %LOCALAPPDATA%, ~ (expanded at run time).
+
+tools:
+
+  kdenlive:
+    name: Kdenlive
+    kind: editor
+    purpose: Free, open-source video editor by KDE (Windows, macOS, Linux).
+    skill_use: Writes a native .kdenlive project (MLT XML) with every shot on the video track, voice/music/SFX on separate audio tracks and the captions as a subtitle track; checks it with melt (bundled with Kdenlive).
+    project: .kdenlive
+    opens_automatically: true
+    os: [win, mac, linux]
+    gui: true
+    detect:
+      commands: [kdenlive]
+      win: ["%ProgramFiles%/Kdenlive/bin/kdenlive.exe"]
+      mac: ["/Applications/kdenlive.app/Contents/MacOS/kdenlive"]
+      linux: ["/usr/bin/kdenlive"]
+      flatpak: org.kde.kdenlive
+      snap: kdenlive
+      melt: ["%ProgramFiles%/Kdenlive/bin/melt.exe", "/Applications/kdenlive.app/Contents/MacOS/melt", "/usr/bin/melt"]
+    install:
+      winget: KDE.Kdenlive
+      choco: kdenlive
+      scoop: extras/kdenlive
+      brew: --cask kdenlive
+      apt: kdenlive
+      dnf: kdenlive
+      pacman: kdenlive
+      flatpak: org.kde.kdenlive
+      snap: kdenlive
+      zypper: kdenlive
+    unverified: [zypper]
+    download: https://kdenlive.org/download/
+    free: yes (GPL)
+    troubleshoot:
+      - Clips show as missing: the project uses absolute paths; keep the editor folder where it was made, or use Project > Clean Up / relink.
+      - A notice says the project was upgraded: normal; Kdenlive converts the file to its current format. Save it once.
+      - Captions: they are in <project>.kdenlive.srt next to the project (Kdenlive's subtitle file).
+
+  shotcut:
+    name: Shotcut
+    kind: editor
+    purpose: Free, open-source video editor by Meltytech (Windows, macOS, Linux).
+    skill_use: Writes a native .mlt project (Shotcut's own format) with the shots, separate audio tracks and markers; checks it with Shotcut's bundled melt (2-second render).
+    project: .mlt
+    opens_automatically: true
+    os: [win, mac, linux]
+    gui: true
+    detect:
+      commands: [shotcut]
+      win: ["%ProgramFiles%/Shotcut/shotcut.exe"]
+      mac: ["/Applications/Shotcut.app/Contents/MacOS/Shotcut"]
+      linux: ["/usr/bin/shotcut"]
+      flatpak: org.shotcut.Shotcut
+      snap: shotcut
+      melt: ["%ProgramFiles%/Shotcut/melt.exe", "/Applications/Shotcut.app/Contents/MacOS/melt"]
+    install:
+      winget: Meltytech.Shotcut
+      choco: shotcut
+      scoop: extras/shotcut
+      brew: --cask shotcut
+      apt: shotcut
+      dnf: shotcut
+      pacman: shotcut
+      flatpak: org.shotcut.Shotcut
+      snap: shotcut
+      zypper: shotcut
+    unverified: [zypper]
+    download: https://shotcut.org/download/
+    free: yes (GPL)
+    troubleshoot:
+      - Clips show as missing: keep the folder in place, or use File > Open Other > relink.
+      - Captions: Timeline > Subtitles > Import the .srt next to the project.
+
+  openshot:
+    name: OpenShot
+    kind: editor
+    purpose: Free, open-source, beginner-friendly video editor (Windows, macOS, Linux).
+    skill_use: Writes a native .osp project (JSON) with the clips on tracks, audio on separate tracks; validates it by parsing.
+    project: .osp
+    opens_automatically: true
+    os: [win, mac, linux]
+    gui: true
+    detect:
+      commands: [openshot-qt]
+      win: ["%ProgramFiles%/OpenShot Video Editor/openshot-qt.exe"]
+      mac: ["/Applications/OpenShot Video Editor.app/Contents/MacOS/openshot-qt"]
+      linux: ["/usr/bin/openshot-qt"]
+      flatpak: org.openshot.OpenShot
+    install:
+      winget: OpenShot.OpenShot
+      choco: openshot
+      scoop: extras/openshot
+      brew: --cask openshot-video-editor
+      apt: openshot-qt
+      dnf: openshot
+      flatpak: org.openshot.OpenShot
+      zypper: openshot-qt
+    unverified: [zypper]
+    notes_arch: Not in Arch's official repos, so the Flatpak is used on Arch/Manjaro.
+    download: https://www.openshot.org/download/
+    free: yes (GPL)
+    troubleshoot:
+      - Experimental export: if a clip is missing, re-import it from media/ and place it at the time shown in EDIT_GUIDE.txt.
+
+  davinci-resolve:
+    name: DaVinci Resolve
+    kind: editor
+    purpose: Professional editor by Blackmagic Design; the free edition is enough (Windows, macOS, Linux with official installer).
+    skill_use: Writes an FCPXML 1.9 timeline (File > Import > Timeline) plus the media; Resolve relinks the clips. Validated by parsing; Resolve has no command line to test-render.
+    project: .fcpxml
+    opens_automatically: false
+    os: [win, mac, linux]
+    gui: true
+    detect:
+      commands: [resolve]
+      win: ["%ProgramFiles%/Blackmagic Design/DaVinci Resolve/Resolve.exe"]
+      mac: ["/Applications/DaVinci Resolve/DaVinci Resolve.app/Contents/MacOS/Resolve"]
+      linux: ["/opt/resolve/bin/resolve"]
+    install:
+      manual: Download the free "DaVinci Resolve" (not Studio) from the official page and run the installer. Registration is optional (click "Download only").
+    notes: Not on winget, Chocolatey, Scoop, Homebrew or Flathub (checked). Needs a capable GPU.
+    notes_linux: Official Linux support is for Rocky Linux; other distros work only with community scripts (not offered by this skill).
+    download: https://www.blackmagicdesign.com/products/davinciresolve
+    free: free edition (Studio is paid)
+    troubleshoot:
+      - Import with File > Import > Timeline (FCPXML), then relink media if asked (point it at the media/ folder).
+      - Captions: File > Import > Subtitle, then drag the subtitle onto the timeline.
+
+  blender-vse:
+    name: Blender Video Sequencer
+    kind: editor
+    purpose: The video editor built into Blender (free, all OSes).
+    skill_use: Builds a .blend with every shot as a movie strip in order, voice/music/SFX on their own audio channels, the captions as text strips, matching fps and size (made with Blender's Python API in background mode).
+    project: .blend
+    opens_automatically: true
+    os: [win, mac, linux]
+    gui: true
+    requires: blender
+    detect:
+      same_as: blender
+    install:
+      same_as: blender
+    download: https://www.blender.org/download/
+    free: yes (GPL)
+    troubleshoot:
+      - Open the .blend and switch to the Video Editing workspace.
+      - Media paths are absolute; File > External Data > Find Missing Files if the folder moved.
+
+  capcut:
+    name: CapCut
+    kind: editor
+    purpose: Popular free editor by ByteDance (Windows, macOS, phones). Its project format is closed.
+    skill_use: No project file (closed format). The skill gives an editor pack (numbered shot clips, audio stems, captions .srt, EDIT_GUIDE.txt with drag-in steps).
+    project: none
+    opens_automatically: false
+    os: [win, mac]
+    gui: true
+    detect:
+      win: ["%LOCALAPPDATA%/CapCut/Apps/CapCut.exe"]
+      mac: ["/Applications/CapCut.app/Contents/MacOS/CapCut"]
+    install:
+      winget: ByteDance.CapCut
+      brew: --cask capcut
+    notes_win: Not on Chocolatey or Scoop (checked); winget works.
+    download: https://www.capcut.com/
+    free: free with paid extras
+    troubleshoot:
+      - Follow EDIT_GUIDE.txt: import media/, place numbered clips in order, audio stems on their own tracks, import the .srt.
+
+  blender:
+    name: Blender
+    kind: engine
+    purpose: Free 3D suite; engine D (Cinematic 3D) and the Blender Video Sequencer.
+    skill_use: Runs in background mode with the skill's scripts (engines/blender) to build scenes and render frames, and to build .blend editor projects.
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      commands: [blender]
+      win: ["%ProgramFiles%/Blender Foundation/Blender*/blender.exe"]
+      mac: ["/Applications/Blender.app/Contents/MacOS/Blender"]
+      linux: ["/usr/bin/blender", "/snap/bin/blender"]
+      flatpak: org.blender.Blender
+      snap: blender
+      version_arg: --version
+    install:
+      winget: BlenderFoundation.Blender
+      choco: blender
+      scoop: extras/blender
+      brew: --cask blender
+      flatpak: org.blender.Blender
+      snap: blender --classic
+      apt: blender
+      dnf: blender
+      pacman: blender
+      zypper: blender
+    unverified: [zypper]
+    notes_debian: Ubuntu 24.04's apt package is Blender 4.0 (old), so the Flatpak (5.x) is offered first.
+    download: https://www.blender.org/download/
+    free: yes (GPL)
+    troubleshoot:
+      - 'Blender not found': it may be installed but not on PATH; the skill also looks in the usual install folders.
+      - Black frames in Eevee on integrated graphics: world haze is disabled for Eevee for this reason.
+      - Render paused (exit code 4): free RAM went under 15 %; close apps and run the same command again (it resumes).
+
+  inkscape:
+    name: Inkscape
+    kind: helper
+    purpose: Free vector editor (SVG).
+    skill_use: Optional. Converts or cleans the user's own SVG artwork (logos they own, drawings) to PNG layers that the 2D engine can place; exports titles as vectors.
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      commands: [inkscape]
+      win: ["%ProgramFiles%/Inkscape/bin/inkscape.exe"]
+      mac: ["/Applications/Inkscape.app/Contents/MacOS/inkscape"]
+      linux: ["/usr/bin/inkscape"]
+      flatpak: org.inkscape.Inkscape
+      snap: inkscape
+      version_arg: --version
+    install:
+      winget: Inkscape.Inkscape
+      choco: inkscape
+      scoop: extras/inkscape
+      brew: --cask inkscape
+      apt: inkscape
+      dnf: inkscape
+      pacman: inkscape
+      flatpak: org.inkscape.Inkscape
+      snap: inkscape
+      zypper: inkscape
+    unverified: [zypper]
+    download: https://inkscape.org/release/
+    free: yes (GPL)
+    troubleshoot:
+      - Command line export: inkscape file.svg --export-type=png --export-filename=out.png
+
+  synfig:
+    name: Synfig Studio
+    kind: helper
+    purpose: Free 2D vector animation program.
+    skill_use: Optional. Renders the user's own Synfig (.sifz) animations to frames so they can be placed into a video; not needed by the built-in styles.
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      commands: [synfig]
+      win: ["%ProgramFiles%/Synfig/bin/synfig.exe"]
+      mac: ["/Applications/SynfigStudio.app/Contents/MacOS/synfig"]
+      linux: ["/usr/bin/synfig"]
+      flatpak: org.synfig.SynfigStudio
+      version_arg: --version
+    install:
+      winget: Synfig.SynfigStudio
+      choco: synfig
+      brew: --cask synfigstudio
+      flatpak: org.synfig.SynfigStudio
+      pacman: synfig
+    notes_debian: Not in Ubuntu 24.04's repos (checked), so the Flatpak is used.
+    notes_fedora: Not in Fedora's repos (checked), so the Flatpak is used.
+    download: https://www.synfig.org/download-stable/
+    free: yes (GPL)
+    troubleshoot:
+      - Render a file from the command line: synfig file.sifz -t png -o frames/f.png
+
+  ffmpeg:
+    name: FFmpeg
+    kind: engine
+    purpose: Encodes video, mixes audio, burns captions, runs QA.
+    skill_use: Required for every engine (shared/finish.py, mix.py, timing.py, captions burn-in).
+    os: [win, mac, linux]
+    gui: false
+    required: true
+    detect:
+      commands: [ffmpeg, ffprobe]
+      win: ["%LOCALAPPDATA%/Microsoft/WinGet/Links/ffmpeg.exe", "C:/ProgramData/chocolatey/bin/ffmpeg.exe", "~/scoop/shims/ffmpeg.exe"]
+      mac: ["/opt/homebrew/bin/ffmpeg", "/usr/local/bin/ffmpeg"]
+      linux: ["/usr/bin/ffmpeg"]
+      version_arg: -version
+    install:
+      winget: Gyan.FFmpeg
+      choco: ffmpeg
+      scoop: main/ffmpeg
+      brew: ffmpeg
+      apt: ffmpeg
+      dnf: ffmpeg-free
+      pacman: ffmpeg
+      zypper: ffmpeg-7
+    unverified: [zypper]
+    notes_fedora: Fedora's ffmpeg-free lacks some patented codecs; H.264 export needs RPM Fusion's ffmpeg (sudo dnf install ffmpeg --allowerasing after enabling RPM Fusion).
+    download: https://ffmpeg.org/download.html
+    free: yes (LGPL/GPL)
+    troubleshoot:
+      - 'ffmpeg not found' right after installing: open a NEW terminal (PATH changes need one); the skill also checks WinGet's Links folder.
+      - Fedora: install RPM Fusion's ffmpeg for H.264.
+
+  node:
+    name: Node.js (22.6 or newer)
+    kind: engine
+    purpose: JavaScript runtime for the Toon 3D engine.
+    skill_use: Runs engines/toon3d/tools/render.mjs (Playwright) and strips the TypeScript types of the toon library.
+    os: [win, mac, linux]
+    gui: false
+    min_version: 22.6
+    detect:
+      commands: [node]
+      win: ["%ProgramFiles%/nodejs/node.exe"]
+      mac: ["/opt/homebrew/bin/node", "/usr/local/bin/node"]
+      linux: ["/usr/bin/node", "/snap/bin/node"]
+      version_arg: --version
+    install:
+      winget: OpenJS.NodeJS.LTS
+      choco: nodejs-lts
+      scoop: main/nodejs-lts
+      brew: node
+      snap: node --classic --channel=24
+      dnf: nodejs nodejs-npm
+      pacman: nodejs npm
+      zypper: nodejs22
+    unverified: [zypper]
+    notes_debian: Ubuntu 24.04's apt nodejs is 18.19 (too old), so the snap (track 24) is offered instead.
+    download: https://nodejs.org/en/download
+    free: yes (MIT)
+    troubleshoot:
+      - Version too old: Toon 3D needs 22.6+; check with node --version.
+      - Ubuntu/Debian: use the snap (or nodejs.org), not apt.
+
+  python:
+    name: Python 3.10+
+    kind: engine
+    purpose: Runs every tool of the skill.
+    skill_use: All shared/ tools and engine A; engines get their packages in the skill's own .venv.
+    os: [win, mac, linux]
+    gui: false
+    required: true
+    detect:
+      commands: [python3, python, py]
+      version_arg: --version
+    install:
+      winget: Python.Python.3.12
+      choco: python
+      scoop: main/python
+      brew: python@3.12
+      apt: python3 python3-venv python3-pip
+      dnf: python3
+      pacman: python
+      zypper: python3
+    unverified: [zypper]
+    download: https://www.python.org/downloads/
+    free: yes (PSF)
+    troubleshoot:
+      - Several Pythons installed: use the one setup_check.py prints; engines use the skill's .venv.
+
+  playwright:
+    name: Playwright + Chromium
+    kind: engine
+    purpose: Headless browser that renders the Toon 3D (three.js) frames.
+    skill_use: engines/toon3d/tools/render.mjs drives Chromium with CPU WebGL.
+    os: [win, mac, linux]
+    gui: false
+    requires: node
+    detect:
+      npm_global: playwright
+    install:
+      npm: -g playwright
+      after: npx playwright install chromium
+      after_linux: npx playwright install --with-deps chromium
+    download: https://playwright.dev/docs/intro
+    free: yes (Apache-2.0)
+    troubleshoot:
+      - 'Executable doesn't exist': run npx playwright install chromium.
+      - Linux missing libraries: npx playwright install --with-deps chromium (needs sudo).
+
+  manim:
+    name: Manim Community
+    kind: engine
+    purpose: Maths, algorithm and diagram animation (engine B).
+    skill_use: Installed into the skill's .venv by setup_check.py --engine manim --install; rendered by engines/manim/render.py.
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      pip: manim
+    install:
+      pip: -r requirements-manim.txt (into the skill's .venv)
+      apt_deps: build-essential python3-dev libcairo2-dev libpango1.0-dev
+      dnf_deps: cairo-devel pango-devel python3-devel
+      pacman_deps: cairo pango
+      brew_deps: cairo pango pkg-config
+    notes: The system packages are only needed on Linux/macOS if pip has to build pycairo or ManimPango from source.
+    download: https://docs.manim.community/en/stable/installation.html
+    free: yes (MIT)
+    troubleshoot:
+      - pip tries to build pycairo/ManimPango: install the system libraries listed for your distro, then retry.
+      - LaTeX errors: maths falls back to plain text when LaTeX is missing; install LaTeX only if you want real typesetting.
+
+  latex:
+    name: LaTeX (optional)
+    kind: helper
+    purpose: Typesets maths for Manim (MathTex). Without it the skill uses plain-text maths.
+    skill_use: Found automatically by engines/manim/render.py (also when not on PATH yet).
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      commands: [latex]
+      win: ["%LOCALAPPDATA%/Programs/MiKTeX/miktex/bin/x64/latex.exe", "C:/texlive/*/bin/windows/latex.exe"]
+      mac: ["/Library/TeX/texbin/latex"]
+      linux: ["/usr/bin/latex"]
+      version_arg: --version
+    install:
+      winget: MiKTeX.MiKTeX
+      choco: miktex
+      scoop: main/miktex
+      brew: --cask basictex
+      apt: texlive-latex-extra texlive-fonts-extra
+      dnf: texlive-scheme-medium
+      pacman: texlive-latexextra
+      zypper: texlive-latex
+    unverified: [zypper]
+    after_win: initexmf --set-config-value=[MPM]AutoInstall=1
+    notes: About 1 GB.
+    notes_win: The second line makes MiKTeX install missing packages silently; without it renders stop at a dialog.
+    notes_mac: Full alternative: brew install --cask mactex-no-gui (~5 GB).
+    download: https://www.latex-project.org/get/
+    free: yes
+    troubleshoot:
+      - Windows: a MiKTeX dialog asking to install a package stops renders; run initexmf --set-config-value=[MPM]AutoInstall=1 once.
+      - First maths render is slow (packages download); later renders are fast.
+
+  rhubarb:
+    name: Rhubarb Lip Sync
+    kind: helper
+    purpose: Turns a voice recording into mouth shapes over time (free, MIT).
+    skill_use: Optional. Makes talking characters' mouths follow the voice (mouth-shape timeline in work/mouths.json).
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      commands: [rhubarb]
+      win: ["{userdir}/tools/*/rhubarb.exe"]
+      mac: ["{userdir}/tools/*/rhubarb"]
+      linux: ["{userdir}/tools/*/rhubarb"]
+      version_arg: --version
+    install:
+      github: DanielSWolf/rhubarb-lip-sync (v1.14.0 zips for Windows, macOS, Linux; unzipped by `tools.py install rhubarb --yes` into the user folder)
+    notes: Not on winget, Chocolatey, Scoop or Homebrew (checked). Official release zips only.
+    download: https://github.com/DanielSWolf/rhubarb-lip-sync/releases
+    free: yes (MIT)
+    troubleshoot:
+      - Not found after install: it lives in the animation-studio user folder (tools/); run tools.py status to see it.
+
+  piper:
+    name: Piper TTS
+    kind: helper
+    purpose: Free, offline text-to-speech for narration.
+    skill_use: shared/voice.py; installed into the skill's .venv; voices in the user cache folder (licence-checked list only).
+    os: [win, mac, linux]
+    gui: false
+    detect:
+      pip: piper
+    install:
+      pip: -r requirements-tts.txt (into the skill's .venv)
+    download: https://github.com/OHF-Voice/piper1-gpl
+    free: yes (GPL-3.0)
+    troubleshoot:
+      - 'Voice not downloaded': run shared/voice.py with --download (about 60 MB) after asking the user.
+      - Only licence-checked voices are allowed by default (published videos need a voice whose data allows it).

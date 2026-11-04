@@ -1,0 +1,27 @@
+{
+ "title": "The Stone Rolled Away (3 s Blender test)",
+ "about": "Mark 16:2-4: 'at the rising of the sun' (low dawn sun), 'the stone was rolled away: for it was very great'. No figures. Coordinates: metres, Z up.",
+ "fps": 30, "duration": 3, "style": "cinematic-3d", "light": "dawn",
+ "camera": [
+  {"t": 0, "pos": [1.6, -9.5, 1.6], "look": [0.9, 3.0, 1.35], "lens": 30},
+  {"t": 3, "pos": [1.2, -7.4, 1.5], "look": [0.8, 3.0, 1.3], "lens": 32}
+ ],
+ "camera_9x16": [
+  {"t": 0, "pos": [2.0, -13.5, 1.8], "look": [1.3, 3.0, 1.5], "lens": 24},
+  {"t": 3, "pos": [1.7, -11.6, 1.7], "look": [1.25, 3.0, 1.45], "lens": 25}
+ ],
+ "dof": {"focus": [0.8, 3.0, 1.2], "fstop": 4.0},
+ "elements": [
+  {"type": "ground", "size": 140, "bumps": 0.35, "bump_size": 5, "material": "ground"},
+  {"type": "cliff", "pos": [0, 6, 2.8], "size": [18, 6, 7], "rough": 0.9, "material": "rock",
+   "openings": [{"pos": [0, 3.0, 1.15], "radius": 0.95, "depth": 4.5, "rot": [90, 0, 0], "scale": [1, 1.3, 1]}]},
+  {"type": "disc", "pos": [2.7, 2.55, 1.45], "radius": 1.45, "thickness": 0.5, "rot": [90, 0, 6], "material": "rock_light"},
+  {"type": "rock", "pos": [-3.2, 1.6, 0.2], "size": [1.1, 0.9, 0.55], "seed": 11},
+  {"type": "rock", "pos": [4.6, 0.4, 0.1], "size": [0.7, 0.6, 0.4], "seed": 12},
+  {"type": "rock", "pos": [-1.6, -1.5, 0.05], "size": [0.4, 0.35, 0.22], "seed": 13},
+  {"type": "tree", "pos": [-6.2, 1.2, 0], "height": 4.6, "seed": 21},
+  {"type": "tree", "pos": [7.8, 2.4, 0], "height": 4.0, "seed": 22},
+  {"type": "tree", "pos": [-11, 4, 0], "height": 5.0, "seed": 23},
+  {"type": "tree", "pos": [3.5, 9.5, 5.6], "height": 3.6, "seed": 24}
+ ]
+}

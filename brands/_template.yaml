@@ -1,0 +1,20 @@
+# animation-studio brand kit. Copy with:  python shared/brand.py new <id>   (saved in YOUR user folder, not in the skill)
+# Every field is optional except name. Only real details the owner gave: the skill never invents contact details.
+# Lists take one item per line ("- value"). Phones: international format; add " | label" for a note.
+name: Your Company Name
+tagline:
+website:
+logo:
+phones:
+whatsapp:
+emails:
+socials:
+colours:
+  primary: "#1f2340"
+  secondary: "#cccccc"
+  accent: "#ffd166"
+font:
+cta:
+defaults:
+  watermark: auto
+  end_card: auto

@@ -1,0 +1,356 @@
+{
+ "title": "Python lists in 10 seconds",
+ "about": "Tech pack example. Code ran on Python 3.14.8 and printed 3 (see code.py). Timings come from shared/voice.py --timing.",
+ "fps": 30,
+ "duration": 10.6,
+ "style": "modern-vector",
+ "camera": [
+  {
+   "t": 0,
+   "x": 0,
+   "y": 5,
+   "w": 10,
+   "h": 10
+  }
+ ],
+ "elements": [
+  {
+   "type": "sky"
+  },
+  {
+   "type": "title",
+   "text": "Python lists",
+   "sub": "one name, many values",
+   "size": 80,
+   "enter": 0.2,
+   "screen": [
+    0.5,
+    0.05
+   ],
+   "screen_16x9": [
+    0.5,
+    0.07
+   ],
+   "screen_1x1": [
+    0.5,
+    0.07
+   ],
+   "screen_4x5": [
+    0.5,
+    0.06
+   ]
+  },
+  {
+   "type": "box",
+   "label": "mango",
+   "color": "box:0",
+   "enter": 3.66,
+   "screen": [
+    0.2,
+    0.2
+   ],
+   "w": 0.27,
+   "h": 0.075,
+   "screen_16x9": [
+    0.33499999999999996,
+    0.3
+   ],
+   "w_16x9": 0.145,
+   "h_16x9": 0.1,
+   "screen_1x1": [
+    0.2,
+    0.27
+   ],
+   "h_1x1": 0.09,
+   "screen_4x5": [
+    0.2,
+    0.21
+   ],
+   "h_4x5": 0.075,
+   "glow": [
+    [
+     8.57,
+     0
+    ],
+    [
+     8.9,
+     1
+    ],
+    [
+     9.8,
+     0.25
+    ]
+   ]
+  },
+  {
+   "type": "box",
+   "label": "guava",
+   "color": "box:1",
+   "enter": 4.1,
+   "screen": [
+    0.5,
+    0.2
+   ],
+   "w": 0.27,
+   "h": 0.075,
+   "screen_16x9": [
+    0.5,
+    0.3
+   ],
+   "w_16x9": 0.145,
+   "h_16x9": 0.1,
+   "screen_1x1": [
+    0.5,
+    0.27
+   ],
+   "h_1x1": 0.09,
+   "screen_4x5": [
+    0.5,
+    0.21
+   ],
+   "h_4x5": 0.075,
+   "glow": [
+    [
+     8.57,
+     0
+    ],
+    [
+     8.9,
+     1
+    ],
+    [
+     9.8,
+     0.25
+    ]
+   ]
+  },
+  {
+   "type": "box",
+   "label": "maize",
+   "color": "box:2",
+   "enter": 6.06,
+   "screen": [
+    0.8,
+    0.2
+   ],
+   "w": 0.27,
+   "h": 0.075,
+   "screen_16x9": [
+    0.665,
+    0.3
+   ],
+   "w_16x9": 0.145,
+   "h_16x9": 0.1,
+   "screen_1x1": [
+    0.8,
+    0.27
+   ],
+   "h_1x1": 0.09,
+   "screen_4x5": [
+    0.8,
+    0.21
+   ],
+   "h_4x5": 0.075,
+   "glow": [
+    [
+     6.06,
+     0
+    ],
+    [
+     6.5,
+     1
+    ],
+    [
+     7.4,
+     0
+    ],
+    [
+     8.57,
+     0
+    ],
+    [
+     8.9,
+     1
+    ],
+    [
+     9.8,
+     0.25
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "text": "0",
+   "size": 30,
+   "enter": 3.66,
+   "font": "regular",
+   "screen": [
+    0.2,
+    0.26
+   ],
+   "screen_16x9": [
+    0.33499999999999996,
+    0.39
+   ],
+   "screen_1x1": [
+    0.2,
+    0.345
+   ],
+   "screen_4x5": [
+    0.2,
+    0.27
+   ]
+  },
+  {
+   "type": "text",
+   "text": "1",
+   "size": 30,
+   "enter": 4.1,
+   "font": "regular",
+   "screen": [
+    0.5,
+    0.26
+   ],
+   "screen_16x9": [
+    0.5,
+    0.39
+   ],
+   "screen_1x1": [
+    0.5,
+    0.345
+   ],
+   "screen_4x5": [
+    0.5,
+    0.27
+   ]
+  },
+  {
+   "type": "text",
+   "text": "2",
+   "size": 30,
+   "enter": 6.06,
+   "font": "regular",
+   "screen": [
+    0.8,
+    0.26
+   ],
+   "screen_16x9": [
+    0.665,
+    0.39
+   ],
+   "screen_1x1": [
+    0.8,
+    0.345
+   ],
+   "screen_4x5": [
+    0.8,
+    0.27
+   ]
+  },
+  {
+   "type": "code",
+   "label": "Python 3.14.8",
+   "enter": 3.0,
+   "lines": [
+    "fruits = [\"mango\", \"guava\"]",
+    "fruits.append(\"maize\")",
+    "print(len(fruits))"
+   ],
+   "typing": [
+    [
+     3.6,
+     0
+    ],
+    [
+     4.6,
+     27
+    ],
+    [
+     6.0,
+     27
+    ],
+    [
+     6.9,
+     49
+    ],
+    [
+     8.5,
+     49
+    ],
+    [
+     9.2,
+     67
+    ]
+   ],
+   "highlight": [
+    [
+     3.6,
+     0
+    ],
+    [
+     6.0,
+     1
+    ],
+    [
+     8.5,
+     2
+    ]
+   ],
+   "screen": [
+    0.5,
+    0.47
+   ],
+   "w": 0.95,
+   "screen_16x9": [
+    0.3,
+    0.64
+   ],
+   "w_16x9": 0.5,
+   "screen_1x1": [
+    0.32,
+    0.6
+   ],
+   "w_1x1": 0.6,
+   "screen_4x5": [
+    0.5,
+    0.48
+   ],
+   "w_4x5": 0.92
+  },
+  {
+   "type": "terminal",
+   "enter": 9.2,
+   "lines": [
+    {
+     "t": 9.3,
+     "text": "python lists.py",
+     "prompt": true
+    },
+    {
+     "t": 9.9,
+     "text": "3"
+    }
+   ],
+   "screen": [
+    0.5,
+    0.71
+   ],
+   "w": 0.8,
+   "screen_16x9": [
+    0.79,
+    0.64
+   ],
+   "w_16x9": 0.38,
+   "screen_1x1": [
+    0.83,
+    0.6
+   ],
+   "w_1x1": 0.32,
+   "screen_4x5": [
+    0.5,
+    0.76
+   ],
+   "w_4x5": 0.7
+  }
+ ]
+}

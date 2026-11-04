@@ -1,0 +1,2 @@
+# Optional free local voice (Piper). Phase 2.
+piper-tts>=1.2,<2

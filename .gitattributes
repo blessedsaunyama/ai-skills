@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+engines/toon3d/vendor/three.module.js -text

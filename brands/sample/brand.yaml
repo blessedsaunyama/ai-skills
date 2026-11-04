@@ -1,0 +1,19 @@
+# FICTIONAL sample brand that ships with the skill (for tests and examples). Not a real business.
+# Phone uses the 555-01xx range reserved for fiction; email and website use the reserved example.com domain.
+name: Sunrise Bakery (sample)
+tagline: Fresh bread every morning
+website: https://example.com
+logo: logo.png
+phones:
+  - +1 202 555 0143 | Orders
+whatsapp: +1 202 555 0178
+emails:
+  - hello@example.com
+colours:
+  primary: "#5b2a12"
+  secondary: "#ffe8c2"
+  accent: "#f4a236"
+cta: Order today
+defaults:
+  watermark: auto
+  end_card: auto

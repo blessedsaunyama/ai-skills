@@ -1,0 +1,214 @@
+{
+ "title": "The Wave",
+ "about": "General pack example: original fiction, invented characters (no sources needed). Hook: the daily wave; turn: 'Until today'; payoff: he waves back.",
+ "fps": 30,
+ "duration": 7.5,
+ "style": "flat-2d",
+ "camera": [
+  {
+   "t": 0,
+   "x": 0,
+   "y": 2.2,
+   "w": 13,
+   "h": 7
+  },
+  {
+   "t": 3.0,
+   "x": 0,
+   "y": 2.2,
+   "w": 13,
+   "h": 7
+  },
+  {
+   "t": 4.0,
+   "x": 2.2,
+   "y": 1.6,
+   "w": 7,
+   "h": 4.6
+  },
+  {
+   "t": 5.2,
+   "x": 2.4,
+   "y": 1.4,
+   "w": 5.2,
+   "h": 3.6
+  }
+ ],
+ "camera_9x16": [
+  {
+   "t": 0,
+   "x": 0,
+   "y": 3.0,
+   "w": 9.5,
+   "h": 8
+  },
+  {
+   "t": 3.0,
+   "x": 0,
+   "y": 3.0,
+   "w": 9.5,
+   "h": 8
+  },
+  {
+   "t": 4.0,
+   "x": 2.6,
+   "y": 2.0,
+   "w": 5,
+   "h": 5
+  },
+  {
+   "t": 5.2,
+   "x": 2.8,
+   "y": 1.8,
+   "w": 4,
+   "h": 4
+  }
+ ],
+ "elements": [
+  {
+   "type": "sky"
+  },
+  {
+   "type": "sun",
+   "x": -6,
+   "y": 9,
+   "r": 1.1,
+   "par": 0.15
+  },
+  {
+   "type": "clouds",
+   "par": 0.4,
+   "drift": 0.3,
+   "items": [
+    {
+     "x": -5,
+     "y": 8,
+     "w": 3.5
+    },
+    {
+     "x": 5,
+     "y": 9.5,
+     "w": 3
+    }
+   ]
+  },
+  {
+   "type": "hills",
+   "layers": [
+    {
+     "par": 0.3,
+     "y": 2.4,
+     "amp": 1.0
+    },
+    {
+     "par": 0.6,
+     "y": 1.2,
+     "amp": 0.6
+    }
+   ]
+  },
+  {
+   "type": "ground"
+  },
+  {
+   "type": "house",
+   "x": -4.6,
+   "w": 4,
+   "h": 3,
+   "wall": "wall",
+   "roof": "roof",
+   "seed": 11
+  },
+  {
+   "type": "house",
+   "x": 4.8,
+   "w": 4,
+   "h": 3,
+   "wall": "cloth:4",
+   "roof": "box:0",
+   "seed": 12
+  },
+  {
+   "type": "tree",
+   "x": 0.3,
+   "h": 3.4,
+   "seed": 13
+  },
+  {
+   "type": "person",
+   "x": -2.4,
+   "facing": 1,
+   "outfit": "modern",
+   "hair": "long",
+   "shirt": "shirt:2",
+   "pants": "pants:2",
+   "skin": 1,
+   "h": 1.7,
+   "pose": [
+    [
+     0,
+     "stand"
+    ],
+    [
+     1.0,
+     "gesture"
+    ],
+    [
+     3.1,
+     "stand"
+    ],
+    [
+     5.6,
+     "gesture"
+    ]
+   ],
+   "seed": 21
+  },
+  {
+   "type": "person",
+   "x": 3.0,
+   "facing": -1,
+   "outfit": "modern",
+   "hair": "short",
+   "shirt": "shirt:1",
+   "pants": "pants:0",
+   "skin": 2,
+   "h": 1.8,
+   "pose": [
+    [
+     0,
+     "stand"
+    ],
+    [
+     4.9,
+     "gesture"
+    ]
+   ],
+   "seed": 22
+  },
+  {
+   "type": "bubble",
+   "at": [
+    2.75,
+    1.62
+   ],
+   "side": -1,
+   "text": "Morning, Rudo!",
+   "size": 58,
+   "enter": 5.2
+  },
+  {
+   "type": "title",
+   "text": "The Wave",
+   "size": 90,
+   "box": "text_bg",
+   "screen": [
+    0.5,
+    0.06
+   ],
+   "enter": 0.1,
+   "exit": 2.6,
+   "color": "text"
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+A list keeps many values under one name.
+Here, fruits starts with two items.
+Append adds one more to the end.
+So len gives us three.

@@ -1,0 +1,23 @@
+{"title": "Two and Two (Noah preview)", "about": "5 s engine test. Ark shape from Gen 6:14-16 (box hull, pitch, window strip above, door in the side). Animals go in two and two (Gen 7:9), birds too (Gen 7:14). Noah drawn old (Gen 7:6). Rain starting while the last ones go in compresses Gen 7:10-13 (inference). See fidelity.md.", "fps": 30, "duration": 5, "style": "storybook", "storm": [[0, 0.0], [1.2, 0.05], [3.6, 0.85], [5, 0.95]], "camera": [{"t": 0, "x": 3.6, "y": 2.3, "w": 16, "h": 9}, {"t": 5, "x": 2.6, "y": 1.6, "w": 11, "h": 6.2}], "camera_9x16": [{"t": 0, "x": 2.6, "y": 1.9, "w": 8.4, "h": 8}, {"t": 5, "x": 2.3, "y": 1.3, "w": 6.8, "h": 6}], "elements": [
+    {"type": "sky"}, 
+    {"type": "sun", "x": 14, "y": 16, "r": 1.4, "par": 0.1}, 
+    {"type": "clouds", "par": 0.4, "drift": 0.25, "items": [{"x": -6, "y": 15, "w": 5}, {"x": 9, "y": 18, "w": 4}, {"x": -2, "y": 13, "w": 7, "storm": true, "enter": 10}, {"x": 8, "y": 15, "w": 8, "storm": true, "enter": 14}, {"x": 18, "y": 12.5, "w": 7, "storm": true, "enter": 16}]}, 
+    {"type": "hills"}, 
+    {"type": "ground"}, 
+    {"type": "tree", "x": 15.5, "h": 4.6, "seed": 41}, 
+    {"type": "tree", "x": 21, "h": 3.6, "seed": 42}, 
+    {"type": "ark", "door_x": 0, "height": 9, "left": 40, "right": 8, "ramp_to": 7}, 
+    {"type": "clip", "left": -1.1, "children": [
+    {"type": "animal", "kind": "sheep", "x": [[0, 1.4], [5, -6.6]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]]}, 
+    {"type": "animal", "kind": "sheep", "x": [[0, 2.6], [5, -5.4]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 1.3}, 
+    {"type": "animal", "kind": "goat", "x": [[0, 5.0], [5, -3.0]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 0.4}, 
+    {"type": "animal", "kind": "goat", "x": [[0, 6.1], [5, -1.9]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 2.0}, 
+    {"type": "animal", "kind": "ox", "x": [[0, 10.9], [5, 2.9]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 0.9}, 
+    {"type": "animal", "kind": "ox", "x": [[0, 13.1], [5, 5.1]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 2.6}, 
+    {"type": "animal", "kind": "sheep", "x": [[0, 14.6], [5, 6.6]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 0.2}, 
+    {"type": "animal", "kind": "sheep", "x": [[0, 15.8], [5, 7.8]], "floor": [[-6, 1.5], [-1.0, 1.5], [7, 0], [60, 0]], "phase": 1.7}]}, 
+    {"type": "bird", "x": [[0.2, 15], [3.9, -2.5]], "y": [[0.2, 8], [3.9, 3.9000000000000004]], "show": [0.2, 3.9], "seed": 51, "size": 0.75}, 
+    {"type": "bird", "x": [[0.5, 16], [4.2, -1.8]], "y": [[0.5, 8.8], [4.2, 3.9000000000000004]], "show": [0.5, 4.2], "seed": 52, "size": 0.75}, 
+    {"type": "person", "x": 4.1, "y": -0.55, "facing": -1, "pose": "gesture", "old": true, "beard": "white", "robe": "cloth:0", "mantle": "cloth:1", "skin": 1, "h": 1.85, "seed": 61}, 
+    {"type": "rain", "amount": [[2.6, 0], [3.8, 0.9], [5, 1]], "density": 260, "seed": 71}, 
+    {"type": "caption", "text": "There went in two and two unto Noah into the ark", "ref": "Genesis 7:9 (KJV)", "show": [0.6, 99]}]}

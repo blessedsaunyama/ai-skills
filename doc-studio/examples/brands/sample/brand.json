@@ -1,0 +1,20 @@
+{
+  "name": "Sunrise Learning Centre (sample)",
+  "tagline": "Fictional brand for testing",
+  "website": "example.org",
+  "phones": [
+    "+000 00 000 0000"
+  ],
+  "emails": [
+    "hello@example.org"
+  ],
+  "whatsapp": "",
+  "address": "",
+  "socials": [],
+  "colours": {
+    "primary": "#2B4C7E",
+    "accent": "#E0A100"
+  },
+  "font": "",
+  "logo": "logo.png"
+}

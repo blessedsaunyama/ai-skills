@@ -1,0 +1,25 @@
+# Shot list: "Daniel and the Lions" (60 s, kids 8–12, 9:16 + 16:9, FAST mode)
+
+**Mode:** FAST. One 1920x1920 master (`SIZE=1920x1920`, fit=focal), cropped to 9:16 (1080x1920) and 16:9 (1920x1080). **Centre-safe box: 1080x1080.** Every face, hand and key prop stays inside it. 16:9 gets wider scenery, and 9:16 gets more sky and floor.
+**Style:** flat cartoon. Shots 7–9 (night, den) use the **solemn / backlit** preset (cool moonlight from behind, tinted cards). Morning (10–14) returns to warm light.
+**Cast (`T.BIBLE`):** `prophet` (Daniel, older), `king` (Darius), `official` ×3 (leaders), `angel`, `fxLion` ×3 (`mouth:'shut'`), `fxGlory` for the morning light. No figure for God.
+Timings are estimates at 3.7 words/s. After the voiceover arrives, `timing.py` gives the real frames.
+
+| # | Time (s) | Script words | Visual | Camera | Light / mood | Formats note | SFX / music |
+|---|---|---|---|---|---|---|---|
+| 1 | 0.0–4.5 | "Daniel would not stop praying..." | Close-up: Daniel kneeling at an open window, hands folded (`cross`), eyes closed | Slow push-in, slight 2° roll | Warm evening, golden | Face centred; in 16:9 the window frame fills the sides | Soft pad starts, bird chirp |
+| 2 | 4.5–9.0 | "King Darius gave Daniel a high place..." | Throne room: the king nods, Daniel bows; 3 officials at the side | Pull back from Daniel to a wide two-shot | Day | 9:16: king behind Daniel in depth; 16:9: the officials visible at the sides | Light harp notes |
+| 3 | 9.0–12.5 | "Jealous leaders searched for a fault, but they found none." | Officials peer around a pillar, then shrug at each other (`squint` → `nervous`) | Medium, quick whip to the reaction | Day, slightly cooler | Keep the 3 heads inside the centre box | Whoosh, "hmm" pluck |
+| 4 | 12.5–18.5 | "So they asked the king to sign a law..." | The king signs a scroll; insert close-up of the seal pressing in | Medium → insert close-up (push) | Day | The scroll and seal in the centre | Stamp thunk on "law", low note on "lions" |
+| 5 | 18.5–25.5 | "Daniel knew the law was signed... just as before." | Daniel walks home, opens the window toward distant Jerusalem hills, kneels | Tracking side move → over-shoulder through the window | Warm, peaceful | 16:9 shows the hills wide; 9:16 is tall: window + sky | Music continues, calm |
+| 6 | 25.5–31.0 | "The leaders caught him praying. The king was sorry..." | Officials point (`point`); the king holds his head (`temple` pose without the swirl) and looks down | Two quick mediums | Golden, darker | Reactions centred | Sting pluck, music drops a step |
+| 7 | 31.0–36.0 | "Daniel was cast into the den... a stone was laid upon the mouth of the den." | Wide: Daniel led to the pit (cutaway: no throwing shown). The stone slides over the opening, viewed from inside the den looking up | Wide → low angle from inside the den | **Solemn backlit**: moonlight through the gap, cards tinted | The stone gap is centred | Music stops; low drone; stone scrape + thud |
+| 8 | 36.0–38.5 | "That night, the king could not sleep." | The king sitting awake by a lamp in the palace, untouched food | Slow push-in | Night blue, lamp glow | The king centred | Drone, crickets |
+| 9 | 38.5–46.0 | "Very early, he hurried to the den and cried, 'O Daniel...'" | Dawn: the king hurries to the stone; servants roll it aside; he calls down | Handheld-feel follow (small kicks) → top-down into the dark den | Dawn: pink sky outside, dark den | Faces in the centre box; the den opening centred | Footsteps, stone roll, voice echo on the verse |
+| 10 | 46.0–50.0 | "Daniel answered, 'My God hath sent his angel, and hath shut the lions' mouths.'" | Reveal: Daniel standing calm; behind him the angel in soft light (`glowK` 1); three lions lying down, mouths shut | Crane down into the den, rack focus from the angel's light to Daniel | `fxGlory` warm light filling the den | Daniel + angel inside the centre; lions spread wider in 16:9 | Music swell resumes in a brighter key, soft shimmer |
+| 11 | 50.0–53.0 | "No hurt was found upon him, 'because he believed in his God.'" | Daniel lifted out by rope (`lift`); the king smiling (`relief_open`) | Low angle up as he rises | Morning sun | Both faces centred | Rope creak, a happy pluck |
+| 12 | 53.0–56.5 | "Daniel stayed faithful, and God was with him. He is with us too." | Daniel back at his window praying, sunlight on him; the king nearby | Slow pull back to a wide | Warm morning | 16:9 is wide and peaceful | Gentle resolve |
+| 13 | 56.5–60.0 | "'He delivereth and rescueth.' Daniel chapter six, verse twenty-seven." | Morning sky over the city; the verse appears as **diegetic** text carved on a stone tablet (readable, not mirrored) | Tilt up from the tablet to the sky | Bright | The tablet inside both safe zones (9:16 bottom UI!) | Final chord |
+
+**Reverence and violence check:** no figure for God (only light). The angel is a man in light, with no wings. The lions are restrained, not cute and not attacking. The casting is a cutaway (no throwing). Verse 24 isn't shown.
+**End card:** none (EGW reading is in `description.txt` only).

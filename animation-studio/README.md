@@ -13,17 +13,20 @@ An open-source **Agent Skill** that turns an idea or a script into a finished an
 
 ## Install
 
+This skill lives in the [ai-skills](https://github.com/blessedsaunyama/ai-skills) repository, in the `animation-studio/` folder.
+
 ### Claude Code
 ```
-git clone https://github.com/blessedsaunyama/animation-studio ~/.claude/skills/animation-studio
+git clone https://github.com/blessedsaunyama/ai-skills
+cp -r ai-skills/animation-studio ~/.claude/skills/animation-studio
 ```
 Then ask Claude Code: *"Make a 30-second animated Bible story about Daniel in the lions' den"* (or type `/animation-studio`).
 
 ### claude.ai
-Download the repository as a ZIP (or a release zip), then **Settings > Capabilities > Skills > Upload**. Note: rendering needs the programs below on the machine that runs the code; on claude.ai the skill can still write scripts, shot lists, captions and brand kits.
+Zip the `animation-studio` folder (the folder itself at the top of the zip), then **Settings > Capabilities > Skills > Upload**. Note: rendering needs the programs below on the machine that runs the code; on claude.ai the skill can still write scripts, shot lists, captions and brand kits.
 
 ### Codex, OpenCode, Gemini CLI and other agents
-Clone the repo anywhere and tell the agent: *"Read AGENTS.md in this folder and follow SKILL.md."*
+Copy the `animation-studio` folder anywhere and tell the agent: *"Read AGENTS.md in this folder and follow SKILL.md."*
 
 ## Requirements
 Only Python 3.10+ is needed to start: the skill checks everything else and shows the exact install command for your system, then asks.

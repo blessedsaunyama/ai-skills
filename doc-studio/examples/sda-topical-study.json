@@ -1,0 +1,84 @@
+{
+  "title": "The Sabbath: God's Gift of Rest",
+  "subtitle": "A topical Bible study in four parts",
+  "author": "doc-studio test",
+  "date": "November 2026",
+  "audience": "Youth and adults",
+  "pack": "sda",
+  "doc_type": "study",
+  "theme": "church",
+  "style": "print",
+  "summary": {
+    "topic": "What the Bible teaches about the seventh-day Sabbath, from Creation to Jesus' ministry, and what it means for us today.",
+    "key_points": [
+      "God blessed and sanctified the seventh day at Creation, before sin and before Israel existed (Genesis 2:1-3).",
+      "The fourth commandment asks us to *remember* the day and grounds it in Creation (Exodus 20:8-11).",
+      "Jesus called Himself \"Lord also of the sabbath\" and said it \"was made for man\" (Mark 2:27-28).",
+      "The Sabbath is meant to be a delight and a picture of the rest Jesus offers (Isaiah 58:13-14; Matthew 11:28)."
+    ],
+    "takeaway": "The Sabbath is not a burden but a weekly gift: time set apart by the Creator to rest in Him."
+  },
+  "blocks": [
+    {"type": "callout", "kind": "tip", "title": "Memory verse", "text": "Remember the sabbath day, to keep it holy. (Exodus 20:8, KJV)"},
+
+    {"type": "heading", "text": "1. Rest built into Creation", "level": 1},
+    {"type": "paragraph", "text": "The first thing the Bible calls holy is not a place or a person but a day. At the end of Creation week God rested, blessed the seventh day and set it apart (Scripture: Genesis 2:2-3)."},
+    {"type": "verse", "ref": "Genesis 2:2-3", "version": "KJV", "text": "And on the seventh day God ended his work which he had made; and he rested on the seventh day from all his work which he had made. And God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made."},
+    {"type": "paragraph", "text": "God did not rest because He was tired. His rest marked a finished, \"very good\" work and invited humanity to share in it. Because this happened before sin and before the nation of Israel, the Sabbath belongs to all people (Inference from Genesis 2:1-3 and Mark 2:27)."},
+    {"type": "egw", "ref": "DA 281.2", "book": "The Desire of Ages", "text": "He gave it to Adam as a day of rest. It was a memorial of the work of creation, and thus a sign of God's power and His love.", "url": "https://text.egwwritings.org/read/130.1322#130.1324", "verified": true},
+
+    {"type": "heading", "text": "2. Remember: the fourth commandment", "level": 1},
+    {"type": "paragraph", "text": "At Sinai God did not introduce a new day. He said **\"Remember\"**, pointing back to Creation, and named the day exactly: \"the seventh day\" (Scripture: Exodus 20:8-11)."},
+    {"type": "verse", "ref": "Exodus 20:8-11", "version": "KJV", "text": "Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: But the seventh day is the sabbath of the Lord thy God: in it thou shalt not do any work... For in six days the Lord made heaven and earth, the sea, and all that in them is, and rested the seventh day: wherefore the Lord blessed the sabbath day, and hallowed it."},
+    {"type": "table", "columns": ["Genesis 2:2-3", "Exodus 20:11", "What it shows"],
+     "rows": [["God \"rested on the seventh day\"", "\"rested the seventh day\"", "Same day, same reason"],
+              ["God \"blessed the seventh day\"", "\"the Lord blessed the sabbath day\"", "The blessing is on the day itself"],
+              ["God \"sanctified it\"", "\"and hallowed it\"", "Set apart as holy time"]],
+     "caption": "Table 1. The commandment repeats the Creation account (wording from the KJV).", "widths": [3, 3, 2]},
+
+    {"type": "heading", "text": "3. Jesus, Lord of the Sabbath", "level": 1},
+    {"type": "paragraph", "text": "In Jesus' day the Sabbath had been loaded with human rules. Jesus did not set the day aside; He cleared away the burdens and showed what it was for (Scripture: Mark 2:27-28)."},
+    {"type": "verse", "ref": "Mark 2:27-28", "version": "KJV", "text": "And he said unto them, The sabbath was made for man, and not man for the sabbath: Therefore the Son of man is Lord also of the sabbath."},
+    {"type": "egw", "ref": "DA 288.1", "book": "The Desire of Ages", "text": "The institutions that God has established are for the benefit of mankind.", "url": "https://text.egwwritings.org/read/130.1322#130.1364", "verified": true},
+    {"type": "paragraph", "text": "If the Sabbath was made *for* us, keeping it is not about earning God's favour. It is about receiving time with Him that He has already given (Inference from Mark 2:27 and Matthew 11:28)."},
+
+    {"type": "heading", "text": "4. A delight, and a sign of deeper rest", "level": 1},
+    {"type": "verse", "ref": "Isaiah 58:13-14", "version": "KJV", "text": "If thou turn away thy foot from the sabbath, from doing thy pleasure on my holy day; and call the sabbath a delight, the holy of the Lord, honourable... Then shalt thou delight thyself in the Lord"},
+    {"type": "paragraph", "text": "Isaiah describes the Sabbath as \"a delight\". Jesus offers rest to all who \"labour and are heavy laden\" (Scripture: Matthew 11:28), and Hebrews speaks of a rest that \"remaineth\" for God's people (Scripture: Hebrews 4:9-10). The weekly Sabbath is a regular reminder of that rest in Him (Inference)."},
+    {"type": "verse", "ref": "Hebrews 4:9-10", "version": "KJV", "text": "There remaineth therefore a rest to the people of God. For he that is entered into his rest, he also hath ceased from his own works, as God did from his."},
+
+    {"type": "heading", "text": "What it means for me", "level": 1},
+    {"type": "bullets", "items": [
+      "Plan ahead on Friday so the Sabbath hours are free for God, family and rest.",
+      "Choose activities that make the day a *delight*: worship, nature, visiting the sick, time with family.",
+      "Treat the Sabbath as an appointment with your Creator, not a list of don'ts."
+    ]},
+
+    {"type": "heading", "text": "Discussion questions", "level": 1},
+    {"type": "numbered", "items": [
+      "Genesis 2:3 says God blessed and sanctified the seventh day. Why do you think the first holy thing in the Bible is *time*?",
+      "Exodus 20:8 begins with \"Remember\". What does that word suggest about when the Sabbath began?",
+      "Jesus said \"The sabbath was made for man\" (Mark 2:27). How can this change the way we keep it?",
+      "Isaiah 58:13 calls the Sabbath \"a delight\". What would make your Sabbath a delight this week?"
+    ]},
+
+    {"type": "heading", "text": "Fidelity notes", "level": 2},
+    {"type": "table", "columns": ["Teaching point", "Tag", "Source"],
+     "rows": [["God rested, blessed and sanctified the seventh day", "Scripture", "Gen 2:2-3"],
+              ["The Sabbath belongs to all people, not only Israel", "Inference", "Gen 2:1-3 (before Israel); Mark 2:27 (\"made for man\")"],
+              ["The commandment points back to Creation", "Scripture", "Ex 20:8, 11"],
+              ["The Sabbath is a memorial of creation and a sign of God's power and love", "EGW", "DA 281.2"],
+              ["Jesus is Lord of the Sabbath and it was made for man", "Scripture", "Mark 2:27-28"],
+              ["The weekly Sabbath reminds us of the rest Jesus gives", "Inference", "Matt 11:28; Heb 4:9-10"]],
+     "widths": [5, 1.4, 3]}
+  ],
+  "references": [
+    {"text": "Genesis 2:1-3, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Genesis+2%3A1-3&version=KJV"},
+    {"text": "Exodus 20:8-11, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Exodus+20%3A8-11&version=KJV"},
+    {"text": "Mark 2:27-28, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Mark+2%3A27-28&version=KJV"},
+    {"text": "Isaiah 58:13-14, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Isaiah+58%3A13-14&version=KJV"},
+    {"text": "Hebrews 4:9-10, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Hebrews+4%3A9-10&version=KJV"},
+    {"text": "Matthew 11:28, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/passage/?search=Matthew+11%3A28&version=KJV"},
+    {"text": "Ellen G. White, *The Desire of Ages*, ch. 29 \"The Sabbath\" (DA 281.2, 288.1)", "url": "https://text.egwwritings.org/read/130.1322"}
+  ]
+}

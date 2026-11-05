@@ -1,0 +1,50 @@
+{
+  "title": "Python Virtual Environments",
+  "subtitle": "Keep every project's packages separate with venv",
+  "author": "doc-studio test",
+  "date": "November 2026",
+  "audience": "Beginner Python developers",
+  "pack": "tech",
+  "doc_type": "slides",
+  "theme": "modern",
+  "style": "screen",
+  "summary": {
+    "topic": "What a Python virtual environment is, and how to create, use and share one with the built-in venv module (Python 3.3+).",
+    "key_points": [
+      "A venv gives each project its own packages, so projects don't break each other",
+      "Create it with `python -m venv .venv`, then activate it",
+      "Share requirements.txt, never the .venv folder"
+    ],
+    "takeaway": "One project, one .venv, one requirements.txt."
+  },
+  "blocks": [],
+  "slides": [
+    {"layout": "two-col", "title": "The problem venv solves",
+     "left_title": "Without venv", "left": ["All projects share one set of packages", "Upgrading for project A can break project B", "Hard to tell what a project really needs"],
+     "right_title": "With venv", "right": ["Each project has its own packages", "Upgrades stay inside one project", "requirements.txt lists exactly what it needs"],
+     "notes": "Start with a story: two projects needing different versions of the same library."},
+    {"layout": "image", "title": "What's inside a project", "image": "images/venv-diagram.svg", "caption": "Diagram: AI-drawn for this deck",
+     "notes": "The .venv folder holds a Python interpreter and its own site-packages. The docs say it is conventionally named .venv or venv."},
+    {"layout": "code", "title": "Create and activate", "text": "Run in your project folder (venv is built in since Python 3.3):",
+     "code": "# create\npython -m venv .venv\n\n# activate: macOS / Linux (bash, zsh)\nsource .venv/bin/activate\n\n# activate: Windows PowerShell\n.venv\\Scripts\\Activate.ps1\n\n# activate: Windows cmd.exe\n.venv\\Scripts\\activate.bat",
+     "caption": "Commands from the Python docs (docs.python.org/3/library/venv.html)",
+     "notes": "On Windows PowerShell the execution policy may need changing first; the docs show the Set-ExecutionPolicy command."},
+    {"layout": "code", "title": "Install and record packages", "text": "With the venv active, pip installs into the venv only:",
+     "code": "python -m pip install requests\n\n# save the exact versions\npython -m pip freeze > requirements.txt\n\n# later, or on another computer\npython -m pip install -r requirements.txt",
+     "caption": "Commands from the pip user guide (pip.pypa.io)"},
+    {"layout": "bullets", "title": "Golden rules from the docs",
+     "bullets": ["Don't commit .venv to Git", "Treat it as disposable: delete and recreate it", "Don't copy it to another computer: it isn't portable", "Keep your code outside the .venv folder", "Type `deactivate` to leave the venv"],
+     "notes": "All five come from the 'How venvs work' section of the venv docs."},
+    {"layout": "two-col", "title": "Common mistakes",
+     "left_title": "Mistake", "left": ["Forgetting to activate", "Committing .venv to Git", "Copying .venv to a new PC"],
+     "right_title": "Fix", "right": ["Check the prompt shows (.venv)", "Add .venv to .gitignore (3.13+ adds one inside the venv for you)", "Recreate it and run pip install -r"]},
+    {"layout": "bullets", "title": "Try it now",
+     "bullets": ["Make a new folder and create a .venv", "Activate it and install one package", "Save requirements.txt", "Delete .venv, recreate it, reinstall from the file"],
+     "notes": "Five-minute exercise. Ask learners to show their requirements.txt."}
+  ],
+  "references": [
+    {"text": "Python Software Foundation, *venv: Creation of virtual environments*, Python 3 documentation", "url": "https://docs.python.org/3/library/venv.html"},
+    {"text": "Python Packaging Authority, *pip User Guide: Requirements Files*", "url": "https://pip.pypa.io/en/stable/user_guide/"}
+  ],
+  "credits": [{"image": "venv-diagram.svg", "author": "AI-drawn for this deck", "licence": "free to use with this deck"}]
+}

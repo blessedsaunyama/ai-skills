@@ -1,0 +1,12 @@
+{"title": "Youth Camp Budget Tracker", "subtitle": "Planning sheet (sample figures)", "pack": "business", "doc_type": "plan",
+ "summary": {"topic": "Budget and task tracker for a three-day youth camp.", "key_points": ["Costs are calculated automatically (quantity x unit cost)", "Totals update when you change a number", "All figures are sample placeholders: replace them with real quotes"], "takeaway": "Replace the sample figures with real quotes before approving the budget."},
+ "blocks": [],
+ "sheets": [
+  {"name": "Budget", "columns": ["Item", "Qty", "Unit cost (USD)", "Total (USD)", "Notes"],
+   "rows": [["Venue hire (per day)", 3, 150, "=B2*C2", "Assumption: sample figure"], ["Meals (per person)", 42, 12, "=B3*C3", "Assumption: sample figure"], ["Transport (bus)", 2, 200, "=B4*C4", "Assumption: sample figure"], ["Materials", 1, 80, "=B5*C5", "Assumption: sample figure"]],
+   "widths": [26, 8, 16, 14, 30], "number_formats": [null, "0", "#,##0.00", "#,##0.00", null],
+   "totals": [{"label": "Total", "column": "D", "func": "SUM"}]},
+  {"name": "Tasks", "columns": ["Task", "Owner", "Due", "Status"],
+   "rows": [["Book venue", "ADD NAME", "2026-12-01", "Not started"], ["Confirm transport", "ADD NAME", "2026-12-10", "Not started"]]}
+ ],
+ "references": [{"text": "No external sources used: all figures are sample placeholders supplied for planning."}]}

@@ -1,0 +1,9 @@
+# doc-studio: install with  python -m pip install --user -r requirements.txt  (or let tools/setup_check.py do it)
+python-docx>=1.1
+python-pptx>=1.0
+openpyxl>=3.1
+reportlab>=4.0
+Pillow>=10.0
+# optional: AI-drawn SVG pictures
+svglib>=1.5
+rlPyCairo>=0.4

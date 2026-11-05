@@ -1,0 +1,71 @@
+{
+  "title": "Safe Drinking Water in Our Community",
+  "subtitle": "Geography project report (draft structure)",
+  "author": "Student name: ADD YOUR NAME",
+  "date": "Term 3, 2026",
+  "audience": "Form 4 Geography",
+  "pack": "education",
+  "doc_type": "report",
+  "theme": "school",
+  "style": "print",
+  "brand": "sample",
+  "summary": {
+    "topic": "How safe and available drinking water is in our community, compared with the global picture reported by the World Health Organization (WHO).",
+    "key_points": [
+      "WHO reports that in 2022 at least 1.7 billion people used a drinking-water source contaminated with faeces.",
+      "Contaminated water can spread diarrhoea, cholera, dysentery, typhoid and polio.",
+      "This report compares those global facts with a small survey of water sources in our area (your data)."
+    ],
+    "takeaway": "Safe water depends on protecting sources from contamination; your findings will show how our community compares."
+  },
+  "blocks": [
+    {"type": "callout", "kind": "note", "title": "How to use this draft", "text": "The structure, background and references are ready. Every green **YOUR TURN** box marks work that must be yours: your survey, your results and your own analysis. Delete these boxes when you have written those parts."},
+
+    {"type": "heading", "text": "1. Introduction", "level": 1},
+    {"type": "paragraph", "text": "Safe water is needed for drinking, cooking and hygiene. In 2010 the UN General Assembly explicitly recognised the human right to water and sanitation (WHO, 2023). This report looks at where households in our area get their drinking water and how safe those sources are."},
+    {"type": "paragraph", "text": "**Aim:** to find out which water sources households in our area use and whether they are protected from contamination."},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR research question in one sentence, and name the area you studied (village, ward or suburb)."},
+
+    {"type": "heading", "text": "2. Background", "level": 1},
+    {"type": "paragraph", "text": "The WHO fact sheet on drinking-water gives the global picture:"},
+    {"type": "table", "columns": ["Fact (WHO)", "Year", "Figure"],
+     "rows": [["People using a safely managed drinking-water service", "2022", "73% of the global population (6 billion people)"],
+              ["People using a source contaminated with faeces", "2022", "at least 1.7 billion"],
+              ["People living in water-stressed countries", "2021", "over 2 billion"],
+              ["Estimated diarrhoeal deaths each year from contaminated water", "estimate", "approximately 505 000"]],
+     "caption": "Table 1. Key facts from WHO (2023), Drinking-water fact sheet.", "widths": [5, 1.2, 3]},
+    {"type": "paragraph", "text": "WHO defines a *safely managed* service as one located on premises, available when needed and free from contamination. It states that microbial contamination from faeces poses the greatest risk to drinking-water safety."},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR local background: what water sources are common in your area (boreholes, wells, rivers, piped water)? Use a source you can name, such as your local council or an interview with a community health worker."},
+
+    {"type": "heading", "text": "3. Method", "level": 1},
+    {"type": "paragraph", "text": "A simple survey method that suits a school project:"},
+    {"type": "numbered", "items": [
+      "Choose a sample of households (for example 20) and ask permission before each interview.",
+      "Ask: main drinking-water source, distance to it, whether it is covered or protected, and whether water is treated (boiled, chlorinated) at home.",
+      "Observe each source if it is safe to do so: is it covered, fenced, near a toilet or animals?",
+      "Record answers in a table (see Table 2)."
+    ]},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR method as you actually did it: how many households, which days, what you asked, and any problems you had."},
+
+    {"type": "heading", "text": "4. Findings", "level": 1},
+    {"type": "table", "columns": ["Water source", "Number of households", "Covered / protected?", "Treated at home?"],
+     "rows": [["Borehole", "", "", ""], ["Protected well", "", "", ""], ["Unprotected well", "", "", ""], ["River or dam", "", "", ""], ["Piped water", "", "", ""]],
+     "caption": "Table 2. Survey results (fill in your own data)."},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR results: fill in Table 2 and add one chart (bar graph of sources). Describe the main pattern in two or three sentences."},
+
+    {"type": "heading", "text": "5. Discussion", "level": 1},
+    {"type": "paragraph", "text": "Questions to guide your discussion:"},
+    {"type": "bullets", "items": [
+      "How does the share of households using protected sources compare with the global figure in Table 1?",
+      "Which sources might be at risk of contamination from faeces, and why?",
+      "What could households, the school or the council do to make water safer?"
+    ]},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR own analysis here (at least two paragraphs). Use your data, compare it with WHO's facts, and give reasons. This is the part your teacher marks most."},
+
+    {"type": "heading", "text": "6. Conclusion", "level": 1},
+    {"type": "callout", "kind": "todo", "text": "ADD YOUR conclusion: answer your research question in three to five sentences and give one recommendation."}
+  ],
+  "references": [
+    {"text": "World Health Organization (2023). *Drinking-water* [Fact sheet]. WHO.", "url": "https://www.who.int/news-room/fact-sheets/detail/drinking-water"}
+  ]
+}

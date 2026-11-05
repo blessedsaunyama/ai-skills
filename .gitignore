@@ -1,0 +1,17 @@
+# Allow-list: only the published skills and the repo files are tracked.
+# Everything else in this workshop folder (_workspace, _zips, build.py, AGENTS.md, drafts, other skills) stays private.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/animation-studio/
+!/bible-story-creator/
+!/doc-studio/
+
+# never inside a skill
+__pycache__/
+*.pyc
+.venv/
+.cache/
+desktop.ini
+.DS_Store

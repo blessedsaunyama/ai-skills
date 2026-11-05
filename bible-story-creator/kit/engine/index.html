@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1080" height="1920"></canvas>
+<script>
+window.addEventListener('error',e=>{window.err=String(e.message);console.log('ERR '+e.message)});
+// Output format, read BEFORE the modules load so story.js can use window.FMT too.
+//   ?fmt=9x16|16x9|1x1|4x5   or   ?w=1920&h=1920 (FAST master)      &fit=height|focal
+(function(){
+  var FORMATS={'9x16':[1080,1920],'16x9':[1920,1080],'1x1':[1080,1080],'4x5':[1080,1350]};
+  var q=new URLSearchParams(location.search), key=q.get('fmt')||'9x16', wh=FORMATS[key]||FORMATS['9x16'];
+  var w=+q.get('w')||wh[0], h=+q.get('h')||wh[1];
+  if(q.get('w')) key=w+'x'+h;
+  // fit: how camera-key fov (authored as the vertical fov of a 1080x1920 frame) maps to this canvas
+  //   height = keep the vertical fov (wider formats see more at the sides)          [BEST default]
+  //   focal  = keep the focal length in pixels (this canvas = a centre crop/extension of the 9:16 frame) [FAST master]
+  var fit=q.get('fit')||(q.get('w')?'focal':'height');
+  window.FMT={key:key,w:w,h:h,aspect:w/h,fit:fit,master:!!q.get('w')};
+  var c=document.getElementById('c'); c.width=w; c.height=h;
+})();
+</script>
+<script type="module" src="main.js"></script></body></html>

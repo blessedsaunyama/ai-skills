@@ -1,0 +1,7 @@
+[{"op": "add_section", "after_section": "Activities", "heading": "Feedback from campers", "level": 1,
+  "blocks": [
+    {"type": "paragraph", "text": "Campers filled in a short form on the last day. Their answers are summarised below."},
+    {"type": "bullets", "items": ["Most enjoyed the **Bible study groups**", "Many asked for more time for hiking", "Some found the talent evening too long"]},
+    {"type": "table", "columns": ["Activity", "Rating (out of 5)"], "rows": [["Bible study", "ADD YOUR DATA"], ["Hiking", "ADD YOUR DATA"], ["Talent evening", "ADD YOUR DATA"]]}
+  ]},
+ {"op": "replace_text", "find": "2025 draft", "replace": "final version"}]

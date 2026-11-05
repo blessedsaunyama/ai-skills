@@ -1,0 +1,29 @@
+{
+  "title": "Sabbath Bible Quiz",
+  "subtitle": "10 questions from the King James Version",
+  "author": "doc-studio test",
+  "date": "November 2026",
+  "audience": "Youth Sabbath School",
+  "pack": "sda",
+  "doc_type": "quiz",
+  "summary": {
+    "topic": "A 10-question quiz on what the Bible says about the Sabbath, from Genesis to Hebrews.",
+    "key_points": ["Every answer is in a KJV verse fetched from BibleGateway", "The reference for each answer is in the answer key", "In Excel, choose A-D in the yellow column to mark yourself"],
+    "takeaway": "Read the verses in the answer key after the quiz."
+  },
+  "blocks": [
+    {"type": "question", "q": "On which day did God end His work of creation and rest?", "choices": ["The first day", "The sixth day", "The seventh day", "The eighth day"], "answer": "C", "explain": "Genesis 2:2"},
+    {"type": "question", "q": "What two things did God do to the seventh day in Genesis 2:3?", "choices": ["Named it and numbered it", "Blessed it and sanctified it", "Measured it and divided it", "Lit it and darkened it"], "answer": "B", "explain": "Genesis 2:3"},
+    {"type": "question", "q": "What is the first word of the fourth commandment?", "choices": ["Keep", "Observe", "Remember", "Honour"], "answer": "C", "explain": "Exodus 20:8"},
+    {"type": "question", "q": "How many days does the commandment say we should labour?", "choices": ["Five", "Six", "Seven", "Four"], "answer": "B", "explain": "Exodus 20:9"},
+    {"type": "question", "q": "Which reason does Exodus 20:11 give for the Sabbath?", "choices": ["The Exodus from Egypt", "The Lord made heaven and earth in six days and rested", "The giving of manna", "The building of the tabernacle"], "answer": "B", "explain": "Exodus 20:11"},
+    {"type": "question", "q": "According to Jesus, the sabbath was made for...", "choices": ["the priests", "the angels", "man", "the Pharisees"], "answer": "C", "explain": "Mark 2:27"},
+    {"type": "question", "q": "Jesus said the Son of man is Lord also of...", "choices": ["the temple", "the sabbath", "the law", "the harvest"], "answer": "B", "explain": "Mark 2:28"},
+    {"type": "question", "q": "What does Isaiah 58:13 say we should call the sabbath?", "choices": ["A burden", "A delight", "A sign", "A shadow"], "answer": "B", "explain": "Isaiah 58:13"},
+    {"type": "question", "q": "Hebrews 4:9 says there remaineth a rest to...", "choices": ["the people of God", "the angels", "the Levites", "the Gentiles only"], "answer": "A", "explain": "Hebrews 4:9"},
+    {"type": "question", "q": "Whom does Jesus invite to come to Him for rest in Matthew 11:28?", "choices": ["The rich", "All that labour and are heavy laden", "Only the disciples", "The scribes"], "answer": "B", "explain": "Matthew 11:28"}
+  ],
+  "references": [
+    {"text": "Genesis 2:1-3; Exodus 20:8-11; Mark 2:27-28; Isaiah 58:13-14; Hebrews 4:9-10; Matthew 11:28, King James Version (BibleGateway)", "url": "https://www.biblegateway.com/"}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "music-day-a4",
+  "type": "event",
+  "size": "a4",
+  "style": "youthful",
+  "layout": "split",
+  "photo_side": "right",
+  "print": {"bleed_mm": 3, "crop_marks": true},
+  "host_line": "Sample SDA Youth presents",
+  "title": "Youth Music Day",
+  "subtitle": "Sing • Praise • Connect",
+  "date": "2026-11-21",
+  "start": "09:00",
+  "end": "16:00",
+  "venue": "Main Church Hall, Gweru",
+  "speaker": {"name": "Sample Speaker", "label": "Guest speaker", "role": "Youth Leader & Musician", "photo": "work/speaker-cutout.png"},
+  "logos": [{"file": "work/assets/logos/youth.png", "pos": "top-left"}, {"file": "work/assets/logos/church.png", "pos": "top-right"}],
+  "contacts": [
+    {"type": "phone", "value": "0772 123 456"},
+    {"type": "whatsapp", "value": "+263 71 234 5678"},
+    {"type": "email", "value": "youth@example.org"},
+    {"type": "facebook", "value": "SampleSDAYouth"}
+  ],
+  "credits": ["Speaker photo: 'Man with crossed arms (Unsplash).jpg', Wikimedia Commons, CC0 1.0"]
+}

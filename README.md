@@ -9,6 +9,7 @@ Each folder is one self-contained skill: a `SKILL.md` plus the tools and referen
 | [animation-studio](animation-studio/) | Idea or script → finished animated video in 8 styles on 4 engines (py2d, Manim, Toon 3D, Blender), 4 formats, Bible/tech/maths/general packs, Piper voice, captions, brand kit, hardware safety tiers |
 | [bible-story-creator](bible-story-creator/) | Scripture-faithful animated Bible story videos: KJV-verified script, fidelity table, shot list, Ellen G. White study notes, then an MP4 from your voiceover in 9:16 / 16:9 / 1:1 / 4:5 |
 | [doc-studio](doc-studio/) | Create and edit Word, PowerPoint, Excel, CSV and PDF documents on any topic, with content packs (SDA/Church, Health, Education, Tech, Business), verified sources, English + Shona, saved brands and edit-on-a-copy |
+| [design-studio](design-studio/) | Flyers, posters, roll-up banners, social posts and stories, certificates, YouTube thumbnails and simple original logos from your own logos, photos and text (no AI people): 3 variations, print-ready PDF with bleed, PNG and editable SVG; also edits existing SVG/AI/PDF/CDR designs |
 
 ## Install a skill
 
@@ -31,4 +32,4 @@ Each skill checks your computer and asks before installing anything it needs.
 - No machine-specific paths; personal data (brands, voices) lives in your user folder, never in the skill.
 
 ## Licence
-MIT © 2026 Blessed Tanaka Saunyama. Bundled third-party code keeps its own licence (see each skill's notices, e.g. `animation-studio/THIRD_PARTY_NOTICES.md`, `bible-story-creator/kit/vendor/`).
+MIT © 2026 Blessed Tanaka Saunyama. Bundled third-party code keeps its own licence (see each skill's notices, e.g. `animation-studio/THIRD_PARTY_NOTICES.md`, `bible-story-creator/kit/vendor/`, `design-studio/THIRD_PARTY_NOTICES.md` for its bundled OFL fonts).

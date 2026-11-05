@@ -1,0 +1,14 @@
+{
+  "name": "chatbot-thumb",
+  "type": "thumbnail",
+  "size": "youtube",
+  "style": "modern",
+  "palette": "tech",
+  "fonts": "bebas-poppins",
+  "photo_side": "right",
+  "title": "Build a chatbot\nin 10 minutes",
+  "badge": "Tutorial",
+  "speaker": {"name": "Sample Speaker", "photo": "work/speaker-cutout.png"},
+  "logos": [{"file": "work/assets/logos/youth.png", "pos": "top-left", "scale": 0.8}],
+  "credits": ["Speaker photo: 'Man with crossed arms (Unsplash).jpg', Wikimedia Commons, CC0 1.0"]
+}
